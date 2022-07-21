@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            user-select: none;
+            cursor: context-menu;
+        }
+
+        #text {
+            height: 9vh;
+            width: 20vw;
+            padding-left: 17px;
+            margin: 10vh 0 8vh 35vw;
+            font-size: 20px;
+        }
+
+        .container {
+            height: 13vh;
+            width: auto;
+        }
+
+        .item {
+            position: relative;
+            border-radius: 0.25rem;
+            top: 20px;
+            font-size: 34px;
+            margin-left: 20px;
+            background-color: #dddddd;
+        }
+
+        .heading {
+            font-size: 10vh;
+            border: 2px solid black;
+            width: 30vw;
+        }
+
+        .boxs {
+            border-radius: 0.25rem;
+            margin-left: 2vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="margin-left: 32vw; margin-top: 2vh;margin-bottom: 2vh;">Start Writing the words below in the input box
+    </h2>
+    <div class="container" id="content">
+    </div>
+    <form action="none.html">
+        <input type="text" id="text" autocomplete="off" placeholder="Start Typing" spellcheck="false">
+    </form>
+    <div class="results">
+        <h4 class="heading">Correct <span class="boxs" style="background-color: rgb(43, 170, 43);">0</span></h4>
+        <h4 class="heading">Incorrect <span class="boxs" style="background-color: rgb(204, 16, 16);">0</span></h4>
+    </div>
+
+</body>
+
+</html>
+<script src="index.js"></script>
